@@ -1,0 +1,1 @@
+export { SimpleTestCardBlue } from './SimpleTestCardBlue';

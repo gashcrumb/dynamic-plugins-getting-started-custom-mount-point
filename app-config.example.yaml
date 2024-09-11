@@ -1,0 +1,32 @@
+# Example configuration specific to this dynamic plugin example
+
+auth:
+  environment: development
+  providers:
+    guest:
+      dangerouslyAllowOutsideDevelopment: true
+
+backend:
+  database:
+    client: better-sqlite3
+    connection: ':memory:'
+  auth:
+    keys:
+      - secret: bleb
+      
+dynamicPlugins:
+  frontend:
+    internal.backstage-plugin-custom-mount-point-host:
+      dynamicRoutes:
+        - path: /custom-mount-point
+          importName: CustomMountPointHostPage
+          menuItem:
+            text: Example Mount Point
+    internal.backstage-plugin-simple-test-card-green:
+      mountPoints:
+        - mountPoint: custom.mount.point
+          importName: SimpleTestCardGreen
+    internal.backstage-plugin-simple-test-card-blue:
+      mountPoints:
+        - mountPoint: custom.mount.point
+          importName: SimpleTestCardBlue
