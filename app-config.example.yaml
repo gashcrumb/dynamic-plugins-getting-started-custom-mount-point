@@ -21,6 +21,7 @@ dynamicPlugins:
         - path: /custom-mount-point
           importName: CustomMountPointHostPage
           menuItem:
+            icon: star
             text: Example Mount Point
     internal.backstage-plugin-simple-test-card-green:
       mountPoints:
