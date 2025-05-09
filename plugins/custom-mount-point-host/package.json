@@ -1,5 +1,5 @@
 {
-  "name": "@internal/backstage-plugin-custom-mount-point-host",
+  "name": "@dynamic-plugins-examples/backstage-plugin-custom-mount-point-host",
   "description": "Frontend plugin for the custom mount point example",
   "version": "0.1.0",
   "main": "src/index.ts",
@@ -22,13 +22,12 @@
     "test": "backstage-cli package test",
     "clean": "backstage-cli package clean",
     "prepack": "backstage-cli package prepack",
-    "postpack": "backstage-cli package postpack",
-    "export-dynamic": "janus-cli package export-dynamic-plugin --clean"
+    "postpack": "backstage-cli package postpack"
   },
   "dependencies": {
-    "@backstage/catalog-model": "^1.6.0",
-    "@backstage/core-components": "0.14.10",
-    "@backstage/core-plugin-api": "^1.9.3",
+    "@backstage/catalog-model": "1.7.3",
+    "@backstage/core-components": "0.16.4",
+    "@backstage/core-plugin-api": "1.10.4",
     "@mui/material": "5.15.17",
     "@scalprum/core": "0.7.0",
     "@scalprum/react-core": "0.7.1"
@@ -39,8 +38,11 @@
     "react-router-dom": "6.0.0-beta.0 || ^6.3.0"
   },
   "devDependencies": {
-    "@backstage/cli": "^0.26.3",
-    "@backstage/test-utils": "^1.5.4",
+    "@backstage/cli": "^0.30.0",
+    "@backstage/dev-utils": "^1.1.9",
+    "@backstage/test-utils": "^1.7.5",
+    "@janus-idp/cli": "^3.5.0",
+    "@openshift/dynamic-plugin-sdk": "^5.0.1",
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^14.0.0",
     "react": "^16.13.1 || ^17.0.0 || ^18.0.0",
