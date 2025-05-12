@@ -14,9 +14,8 @@ The example components are composed into a page in Developer Hub using the confi
 
 ## Prerequisites
 
-- node 20.x (node 18 may work fine also but untested)
-- npm (10.8.1 was used during development)
-- yarn (3.8.1 was used during development)
+- node 22.x (node 18 may work fine also but untested)
+- yarn
 
 To run this example locally:
 

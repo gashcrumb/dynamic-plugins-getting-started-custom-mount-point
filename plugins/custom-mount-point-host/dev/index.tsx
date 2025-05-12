@@ -22,20 +22,17 @@ const scalprumState: ScalprumState = {
   api: {
     dynamicRootConfig: {
       mountPoints: {
-        // This object must conform to Record<string, Record<string, CustomMountPointItem[]>>
         'custom.mount.point': [
-          // This is the mount point name with its items
           {
             Component: SimpleTestCardGreen,
             config: {
               layouts: {
-                // prettier-ignore
-                lg: { w: 4, h: 3, x: 0, y: 0 }, // lg is the default breakpoint in ResponsiveReactGridLayout
+                lg: { w: 4, h: 3, x: 0, y: 0 },
               },
               props: {
                 title: 'Green Test Card (Dev)',
                 text: 'This card is rendered via Scalprum dev config.',
-                icon: 'extension', // Icon name string, handled by CustomMountPointHostPage
+                icon: 'extension',
               },
             },
           },
@@ -43,13 +40,12 @@ const scalprumState: ScalprumState = {
             Component: SimpleTestCardBlue,
             config: {
               layouts: {
-                // prettier-ignore
-                lg: { w: 4, h: 3, x: 4, y: 0 }, // Positioned next to the green card
+                lg: { w: 4, h: 3, x: 4, y: 0 },
               },
               props: {
                 title: 'Blue Test Card (Dev)',
                 text: 'This is another card from Scalprum dev config.',
-                icon: 'dashboard', // Another icon name string
+                icon: 'dashboard',
               },
             },
           },
@@ -58,8 +54,6 @@ const scalprumState: ScalprumState = {
       },
     },
   },
-  // No remote applications (dynamic plugins) are configured to be loaded here.
-  // The 'config' object below would hold configurations for remote modules.
   config: {},
   pluginStore: new PluginStore(),
   initialized: true,
@@ -73,7 +67,7 @@ createDevApp()
         <CustomMountPointHostPage />
       </ScalprumContext.Provider>
     ),
-    title: 'Custom Mount Point Host', // This title will appear in the dev app sidebar
-    path: '/custom-mount-point', // Matches the path mentioned in your README
+    title: 'Custom Mount Point Host',
+    path: '/custom-mount-point',
   })
   .render();
