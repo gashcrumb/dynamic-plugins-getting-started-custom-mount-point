@@ -46,8 +46,8 @@ export const MountPointHostPage = () => {
               const props = config && config.props ? config.props : {};
               return (
                 <ComponentWithIcon
+                  title=""
                   {...props}
-                  title={'foo'}
                   key={`search_results_${idx}`}
                   icon={<MenuIcon icon={props.icon || ''} />}
                 />

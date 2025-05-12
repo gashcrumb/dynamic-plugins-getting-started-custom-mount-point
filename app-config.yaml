@@ -1,7 +1,7 @@
 # Example configuration specific to this dynamic plugin example
 app:
   title: Dynamic Plugins Custom Mount Point Example
-  baseUrl: http://localhost:7007
+  baseUrl: http://grouchy:7007
 
 auth:
   environment: development
@@ -10,7 +10,7 @@ auth:
       dangerouslyAllowOutsideDevelopment: true
 
 backend:
-  baseUrl: http://localhost:7007
+  baseUrl: http://grouchy:7007
   database:
     client: better-sqlite3
     connection: ':memory:'

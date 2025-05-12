@@ -28,26 +28,32 @@
     "@backstage/catalog-model": "1.7.3",
     "@backstage/core-components": "0.16.4",
     "@backstage/core-plugin-api": "1.10.4",
-    "@mui/material": "5.15.17",
+    "@emotion/react": "11.11.1",
+    "@emotion/styled": "11.11.0",
+    "@mui/icons-material": "5.15.0",
+    "@mui/material": "5.15.0",
     "@scalprum/core": "0.7.0",
-    "@scalprum/react-core": "0.7.1"
+    "@scalprum/react-core": "0.7.1",
+    "react-use": "17.4.0"
   },
   "peerDependencies": {
-    "react": "^16.13.1 || ^17.0.0 || ^18.0.0",
-    "react-dom": "^16.13.1 || ^17.0.0 || ^18.0.0",
-    "react-router-dom": "6.0.0-beta.0 || ^6.3.0"
+    "react": "16.13.1 || 17.0.0 || 18.0.0",
+    "react-dom": "16.13.1 || 17.0.0 || 18.0.0",
+    "react-router-dom": "6.0.0-beta.0 || 6.3.0"
   },
   "devDependencies": {
-    "@backstage/cli": "^0.30.0",
-    "@backstage/dev-utils": "^1.1.9",
-    "@backstage/test-utils": "^1.7.5",
-    "@janus-idp/cli": "^3.5.0",
-    "@openshift/dynamic-plugin-sdk": "^5.0.1",
-    "@testing-library/jest-dom": "^6.0.0",
-    "@testing-library/react": "^14.0.0",
-    "react": "^16.13.1 || ^17.0.0 || ^18.0.0",
-    "react-dom": "^16.13.1 || ^17.0.0 || ^18.0.0",
-    "react-router-dom": "6.0.0-beta.0 || ^6.3.0"
+    "@backstage/cli": "0.30.0",
+    "@backstage/dev-utils": "1.1.9",
+    "@backstage/test-utils": "1.7.5",
+    "@dynamic-plugins-examples/backstage-plugin-simple-test-card-blue": "*",
+    "@dynamic-plugins-examples/backstage-plugin-simple-test-card-green": "*",
+    "@janus-idp/cli": "3.5.0",
+    "@openshift/dynamic-plugin-sdk": "5.0.1",
+    "@testing-library/jest-dom": "6.0.0",
+    "@testing-library/react": "14.0.0",
+    "react": "16.13.1 || 17.0.0 || 18.0.0",
+    "react-dom": "16.13.1 || 17.0.0 || 18.0.0",
+    "react-router-dom": "6.0.0-beta.0 || 6.3.0"
   },
   "files": [
     "dist"

@@ -63,3 +63,39 @@ bash run-example.sh
 After verifying there are no errors printed on the console point a browser at [http://localhost:7007/custom-mount-point](http://localhost:7007/custom-mount-point) and the example should be visible.
 
 ![Example screenshot with a custom mount point consisting of a green box and a blue box](./screenshot.png)
+
+## Running Plugin Development Servers
+
+Each of the three main example plugins (`custom-mount-point-host`, `simple-test-card-blue`, and `simple-test-card-green`) has its own development server setup. This allows you to work on and view the plugin's components in isolation. These development servers use the `app-config.yaml` located in the root of this repository for their configuration.
+
+To start the development server for a specific plugin, run the corresponding command from the root of this repository:
+
+### Custom Mount Point Host Plugin
+
+This plugin demonstrates the custom mount point. Its development server will render the `CustomMountPointHostPage` with components dynamically loaded via a mock Scalprum setup (as configured in its `dev/index.tsx`).
+
+```bash
+yarn workspace @dynamic-plugins-examples/backstage-plugin-custom-mount-point-host start --config ../../app-config.yaml
+```
+
+The page will be available at http://localhost:7007/custom-mount-point-host-dev.
+
+### Simple Test Card Blue Plugin
+
+This plugin exports a simple blue card. Its development server will render this card on a dedicated page.
+
+```bash
+yarn workspace @dynamic-plugins-examples/backstage-plugin-simple-test-card-blue start --config ../../app-config.yaml
+```
+
+The page will be available at http://localhost:7007/simple-test-card-blue-dev.
+
+### Simple Test Card Green Plugin
+
+This plugin exports a simple green card. Its development server will render this card on a dedicated page.
+
+```bash
+yarn workspace @dynamic-plugins-examples/backstage-plugin-simple-test-card-green start --config ../../app-config.yaml
+```
+
+The page will be available at http://localhost:7007/simple-test-card-green-dev.
