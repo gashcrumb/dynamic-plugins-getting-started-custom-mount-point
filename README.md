@@ -14,7 +14,7 @@ The example components are composed into a page in Developer Hub using the confi
 
 ## Prerequisites
 
-- node 22.x (node 18 may work fine also but untested)
+- node
 - yarn
 
 To run this example locally:

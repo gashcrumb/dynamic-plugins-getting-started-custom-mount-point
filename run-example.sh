@@ -25,7 +25,6 @@ echo "  Using Image: ${APP_IMAGE}"
 echo "  Mounting plugins from (host): ${PLUGIN_DIR}"
 echo "  Mounting app config from (host): ${APP_CONFIG_HOST}"
 echo "  Container LOG_LEVEL will default to 'info' (override with LOG_LEVEL env var)"
-echo "  Container HOSTNAME will default to 'localhost' (override with HOSTNAME env var)"
 echo "---"
 
 podman run \
